@@ -54,6 +54,9 @@
     (centaur-tabs :location (recipe :fetcher github
                                     :repo "ema2159/centaur-tabs"))
 
+    (nerd-icons-dired :location (recipe :fetcher github
+                                        :repo "rainstormstudio/nerd-icons-dired"))
+
     )
   "The list of Lisp packages required by the nerd-icons-ui layer.
 
@@ -124,6 +127,7 @@ Each entry is either:
     (centaur-tabs-close-button "✕")
     (centaur-tabs-modified-marker "•")
     (centaur-tabs-cycle-scope 'tabs)
+
     :hook
     (dashboard-mode . centaur-tabs-local-mode)
     (dired-mode . centaur-tabs-local-mode)
@@ -148,3 +152,9 @@ Each entry is either:
     (nerd-icons-ibuffer-icon t)
     :hook (ibuffer-mode . nerd-icons-ibuffer-mode))
   )
+
+(defun nerd-icons-ui/init-nerd-icons-dired ()
+  (require 'nerd-icons)
+  (use-package nerd-icons-dired
+    :hook
+    (dired-mode . nerd-icons-dired-mode)))
