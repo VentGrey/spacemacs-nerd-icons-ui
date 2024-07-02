@@ -14,7 +14,10 @@ This layer brings `nerd-icons` to some components of Spacemacs
 > [!IMPORTANT]
 > Do not enable the `tabs` configuration layer when using this package. It's easier to install this configuration than patching centaur tabs.
 >
-> This also may or may not break your Spacemacs dashboard. I wouldn't miss it much though...
+> Make sure you have the required nerd fonts. By default `nerd-icons` is configured to use `"Symbols Nerd Font Mono"` as the primary icons font
+> if you don't have it installed in your system. Please remove any traces of `all-the-icons` (even fonts, as they conflict with nerd fonts).
+>
+> Finally, run `M-x nerd-icons-install-fonts`
 
 1. Download this repository as zip or clone it.
 2. Copy `packages.el` to `~/.emacs.d/private/nerd-icons-ui/packages.el`
