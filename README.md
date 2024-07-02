@@ -6,6 +6,9 @@ Everything default still points to `all-the-icons` except for the doom modeline.
 
 This layer brings `nerd-icons` to some components of Spacemacs
 
+![image](https://github.com/VentGrey/spacemacs-nerd-icons-ui/assets/24773698/4bd19179-e5af-4f2f-b708-e34b366b6668)
+
+
 ## How to install
 
 > [!IMPORTANT]
